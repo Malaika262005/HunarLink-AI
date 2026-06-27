@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== THEME VARIABLES ===== */
+
+/* Light theme (default) */
+:root, .light {
+  --bg: #f9fafb;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --brand-light: #5eead4;
+  --brand-contrast: #ffffff;
+}
+
+/* Dark theme */
+.dark {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --border: #334155;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --brand: #14b8a6;
+  --brand-dark: #0d9488;
+  --brand-light: #2dd4bf;
+  --brand-contrast: #ffffff;
+}
+
+/* Brand theme (Purple/Violet) */
+.brand {
+  --bg: #faf5ff;
+  --surface: #ffffff;
+  --border: #e9d5ff;
+  --text: #2e1065;
+  --text-muted: #7c6f93;
+  --brand: #7c3aed;
+  --brand-dark: #6d28d9;
+  --brand-light: #c4b5fd;
+  --brand-contrast: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s, color 0.2s;
+}
